@@ -34,7 +34,7 @@ const startBrowser = async function(options){
 
     const page = await browser.newPage();
     
-    await page.setDefaultNavigationTimeout(180000);
+    await page.setDefaultTimeout(180000);
 
     await page.setViewport({
       width, 
